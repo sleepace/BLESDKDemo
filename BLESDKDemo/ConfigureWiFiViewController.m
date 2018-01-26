@@ -59,8 +59,12 @@
     self.view1.layer.borderColor = [UIColor colorWithRed:195/255.0 green:203/255.0f blue:214/255.0f alpha:1.0].CGColor;
     self.view1.layer.borderWidth = 1.0f;
     
+    self.textfield1.placeholder = NSLocalizedString(@"input_wifi_name", nil);
+    self.textfield2.placeholder = NSLocalizedString(@"input_wifi_psw", nil);
+    
     self.textfield1.text = @"medica_2";
     self.textfield2.text = @"11221122";
+    
 }
 
 
@@ -81,18 +85,19 @@
     [con configPeripheral:currentPer.peripheral deviceType:SLPDeviceType_WIFIReston serverAddress:@"172.14.1.100" port:9010 wifiName:self.textfield1.text password:self.textfield2.text completion:^(BOOL succeed, id data) {
         NSString *result=@"";
         if (succeed) {
-            NSLog(@"config succeed!");
+            NSLog(@"send succeed!");
             result = NSLocalizedString(@"reminder_configuration_success", nil);
         }
         else
         {
-            NSLog(@"config failed!");
+            NSLog(@"send failed!");
             result = NSLocalizedString(@"reminder_configuration_fail", nil);
         }
         UIAlertView *alertview =[[ UIAlertView alloc]initWithTitle:nil message:result delegate:self cancelButtonTitle:NSLocalizedString(@"btn_ok", nil) otherButtonTitles: nil];
         [alertview show];
     }];
 }
+
 
 #pragma mark -ScanDeviceDelegate
 - (void)didSelectPeripheal:(SLPPeripheralInfo *)peripheralInfo
