@@ -14,3 +14,4 @@
 #import "SLPTimer.h"
 #import "SLPDataTransferCommon.h"
 #import "SLPDataTransferDef.h"
+#import "SLPDeviceInfo.h"

@@ -14,7 +14,7 @@
 		</data>
 		<key>Headers/SLPCommon.h</key>
 		<data>
-		w0lpPRNMf1urstd4h9SF/o5+vX0=
+		79xME/IkHKuPT14+VI9A+kY9cPc=
 		</data>
 		<key>Headers/SLPDataTransferCommon.h</key>
 		<data>
@@ -23,6 +23,10 @@
 		<key>Headers/SLPDataTransferDef.h</key>
 		<data>
 		Znrm06UbPEqtehlIcXNVq5xmx7o=
+		</data>
+		<key>Headers/SLPDeviceInfo.h</key>
+		<data>
+		sFYp54vqngiBTk9/3nia2uvS3qY=
 		</data>
 		<key>Headers/SLPTimer.h</key>
 		<data>
@@ -69,11 +73,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			w0lpPRNMf1urstd4h9SF/o5+vX0=
+			79xME/IkHKuPT14+VI9A+kY9cPc=
 			</data>
 			<key>hash2</key>
 			<data>
-			barFEKfFLtYD3XCL6QDPM86oW6EGPlHBg0j5oEelIzk=
+			TBBB+xKuRJRAn4xU0A/vjXxThT7Tf89Oz8PKZS0m/2U=
 			</data>
 		</dict>
 		<key>Headers/SLPDataTransferCommon.h</key>
@@ -96,6 +100,17 @@
 			<key>hash2</key>
 			<data>
 			XhW5kBGR6kGnrIpGz+CBRNf4tj+fwitM0AWCG4InlYc=
+			</data>
+		</dict>
+		<key>Headers/SLPDeviceInfo.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			sFYp54vqngiBTk9/3nia2uvS3qY=
+			</data>
+			<key>hash2</key>
+			<data>
+			G4kpU0vHhTsnO2qS5ojV3uruNE9mgbstsF7jvQm2sSs=
 			</data>
 		</dict>
 		<key>Headers/SLPTimer.h</key>

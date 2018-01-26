@@ -7,12 +7,15 @@
 //
 
 #import "ScanDeviceViewController.h"
+#import <CoreBluetooth/CoreBluetooth.h>
 
 //#import "Tool.h"
 
-@interface ScanDeviceViewController ()<UITableViewDelegate,UITableViewDataSource>
+@interface ScanDeviceViewController ()<UITableViewDelegate,UITableViewDataSource,CBPeripheralDelegate,CBCentralManagerDelegate>
 {
     NSMutableArray *deviceArray;
+    
+    CBCentralManager *d_manager;
 }
 @property (weak, nonatomic) IBOutlet UIButton *refreshButton;
 @property (weak, nonatomic) IBOutlet UITableView *myTableview;
@@ -45,6 +48,8 @@
     
     BOOL isOpen=[SLPBLESharedManager blueToothIsOpen];
     [self performSelector:@selector(pressRefresh:) withObject:nil afterDelay:1.0f];
+    
+      d_manager = [[CBCentralManager alloc] initWithDelegate:self queue:nil];
 }
 
 
@@ -67,25 +72,56 @@
 //        return ;
 //    }
 //
-    [SLPBLESharedManager stopAllPeripheralScan];
-    if (deviceArray) {
-        [deviceArray removeAllObjects];
-    }
-    [SLPBLESharedManager scanBluetoothWithTimeoutInterval:10.0 completion:^(SLPBLEScanReturnCodes code, NSInteger handleID, SLPPeripheralInfo *peripheralInfo) {
-        NSLog(@"scan device>>:%@",peripheralInfo.name);
-        int i=0;
-        while (i<deviceArray.count) {
-            SLPPeripheralInfo *devInfo=(SLPPeripheralInfo*)[deviceArray objectAtIndex:i++];
-            if (devInfo.name&&[devInfo.name isEqualToString:peripheralInfo.name]) {
-                return ;
-            }
-        }
-        if (peripheralInfo.name&&peripheralInfo.name.length) {
-            [deviceArray addObject:peripheralInfo];
-            [self.myTableview reloadData];
-        }
-    }];
+//    [SLPBLESharedManager stopAllPeripheralScan];
+//    if (deviceArray) {
+//        [deviceArray removeAllObjects];
+//    }
+//    [SLPBLESharedManager scanBluetoothWithTimeoutInterval:10.0 completion:^(SLPBLEScanReturnCodes code, NSInteger handleID, SLPPeripheralInfo *peripheralInfo) {
+//        NSLog(@"scan device>>:%@",peripheralInfo.name);
+//        int i=0;
+//        while (i<deviceArray.count) {
+//            SLPPeripheralInfo *devInfo=(SLPPeripheralInfo*)[deviceArray objectAtIndex:i++];
+//            if (devInfo.name&&[devInfo.name isEqualToString:peripheralInfo.name]) {
+//                return ;
+//            }
+//        }
+//        if (peripheralInfo.name&&peripheralInfo.name.length) {
+//            [deviceArray addObject:peripheralInfo];
+//            [self.myTableview reloadData];
+//        }
+//    }];
+    
+   
+    
+//     [_CmCentra scanForPeripheralsWithServices:nil  options:0];
+    [d_manager scanForPeripheralsWithServices:nil options:0];
+    
 }
+
+- (void)centralManager:(CBCentralManager *)central didDiscoverPeripheral:(CBPeripheral *)peripheral advertisementData:(NSDictionary<NSString *, id> *)advertisementData RSSI:(NSNumber *)RSSI;
+{
+     NSData *data = [advertisementData objectForKey:CBAdvertisementDataManufacturerDataKey];
+    if (data !=nil) {
+         NSString *deviceID = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+        NSLog(@"name1111----- %@",deviceID);
+        if ([deviceID hasPrefix:@"Z3001670"]) {
+            NSLog(@"name----- %@",deviceID);
+            SLPPeripheralInfo *info = [[SLPPeripheralInfo alloc]init];
+            info.peripheral = peripheral;
+            info.name = deviceID;
+            [self.delegate didSelectPeripheal:info];
+            [self.navigationController popViewControllerAnimated:YES];
+        }
+    }
+  
+}
+
+- (void)centralManagerDidUpdateState:(CBCentralManager *)central
+{
+
+    
+}
+
 
 - (void)selectDevice:(NSIndexPath *)indexPath
 {

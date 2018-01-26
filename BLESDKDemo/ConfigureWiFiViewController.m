@@ -9,6 +9,7 @@
 #import "ConfigureWiFiViewController.h"
 #import "ScanDeviceViewController.h"
 #import <BLEWifiConfig/SLPBleWifiConfig.h>
+#import <CoreBluetooth/CoreBluetooth.h>
 
 @interface ConfigureWiFiViewController ()<ScanDeviceDelegate>
 {
