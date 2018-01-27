@@ -47,7 +47,7 @@
     self.titleLabel.text = NSLocalizedString(@"device_name_z300", nil);
     self.label1.text = NSLocalizedString(@"step1", nil);
     self.label2.text = NSLocalizedString(@"select_device", nil);
-    self.label3.text = NSLocalizedString(@"设备ID", nil);
+    self.label3.text = NSLocalizedString(@"select_device", nil);
 //    self.label4.text = @"设备连接的WiFi";
     self.label5.text = NSLocalizedString(@"step2", nil);
     self.label6.text = NSLocalizedString(@"select_wifi", nil);

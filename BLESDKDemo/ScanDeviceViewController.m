@@ -36,7 +36,7 @@
     self.myTableview.delegate=self;
     self.myTableview.dataSource=self;
     deviceArray =[[NSMutableArray alloc]initWithCapacity:0];
-    self.label1.text=NSLocalizedString(@"搜索设备ID", nil);
+    self.label1.text=NSLocalizedString(@"search_device", nil);
     self.label2.text=NSLocalizedString(@"select_device_id", nil);
     self.label3.text=NSLocalizedString(@"refresh_deviceid_list", nil);
     self.textView.layer.borderWidth=1.0f;

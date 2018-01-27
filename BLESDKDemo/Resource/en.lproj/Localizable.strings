@@ -1,4 +1,3 @@
-
 "en-us"="en-us";
 
 "demo_name_ble_wifi"="WLAN Config. via BLE";
@@ -26,4 +25,6 @@
 "reminder_configuration_fail"="WLAN Pairing Failed";
 "reminder_connect_wifi"="Please Connect your phone to WLAN!";
 "reminder_connect_hotspot2"="Please check if your WLAN is connected successful";
+"search_device"="Search Device ID";
+"refreshing"="Refreshing…";
 
