@@ -11,6 +11,7 @@
 		266CF1BE201B03A100B57C32 /* SLPCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 266CF1BB201B03A100B57C32 /* SLPCommon.framework */; };
 		266CF1BF201B03A100B57C32 /* BluetoothManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 266CF1BC201B03A100B57C32 /* BluetoothManager.framework */; };
 		266CF1C2201B055700B57C32 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 266CF1C1201B055700B57C32 /* libc++.tbd */; };
+		2671AB93201C104D00027F6E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2671AB95201C104D00027F6E /* InfoPlist.strings */; };
 		267A074A20197DC00025AC13 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 267A074920197DC00025AC13 /* AppDelegate.m */; };
 		267A075220197DC00025AC13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 267A075120197DC00025AC13 /* Assets.xcassets */; };
 		267A075520197DC00025AC13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 267A075320197DC00025AC13 /* LaunchScreen.storyboard */; };
@@ -46,6 +47,8 @@
 		266CF1BB201B03A100B57C32 /* SLPCommon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SLPCommon.framework; sourceTree = "<group>"; };
 		266CF1BC201B03A100B57C32 /* BluetoothManager.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BluetoothManager.framework; sourceTree = "<group>"; };
 		266CF1C1201B055700B57C32 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		2671AB94201C104D00027F6E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2671AB96201C105100027F6E /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		267A074520197DC00025AC13 /* BLESDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BLESDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		267A074820197DC00025AC13 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		267A074920197DC00025AC13 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -150,6 +153,7 @@
 			children = (
 				267A07DD2019D8420025AC13 /* icon */,
 				267A07892019C6240025AC13 /* Localizable.strings */,
+				2671AB95201C104D00027F6E /* InfoPlist.strings */,
 				267A07692019BD3A0025AC13 /* sdk_icon_nav_downarrow@2x.png */,
 				267A076A2019BD3A0025AC13 /* sdk_icon_nav_downarrow@3x.png */,
 				267A076B2019BD3A0025AC13 /* sdk_btn_refresh_nor@2x.png */,
@@ -266,6 +270,7 @@
 				267A077E2019BE140025AC13 /* ScanDeviceViewController.xib in Resources */,
 				267A07712019BD3A0025AC13 /* sdk_btn_refresh_nor@2x.png in Resources */,
 				267A080A2019D8420025AC13 /* sdk_dot_108.png in Resources */,
+				2671AB93201C104D00027F6E /* InfoPlist.strings in Resources */,
 				267A08062019D8420025AC13 /* sdk_dot_60.png in Resources */,
 				267A08082019D8420025AC13 /* sdk_dot_58.png in Resources */,
 				267A080C2019D8420025AC13 /* sdk_dot_120.png in Resources */,
@@ -291,6 +296,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		2671AB95201C104D00027F6E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2671AB94201C104D00027F6E /* en */,
+				2671AB96201C105100027F6E /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		267A075320197DC00025AC13 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -432,7 +446,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"-force_load",
-					"$(SRCROOT)/BluetoothManager.framework/BluetoothManager",
+					"$(SRCROOT)/BLEWifiConfig.framework/BLEWifiConfig",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.medicatech.BLESDKDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -455,7 +469,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"-force_load",
-					"$(SRCROOT)/BluetoothManager.framework/BluetoothManager",
+					"$(SRCROOT)/BLEWifiConfig.framework/BLEWifiConfig",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.medicatech.BLESDKDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

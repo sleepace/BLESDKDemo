@@ -47,7 +47,7 @@
     self.titleLabel.text = NSLocalizedString(@"device_name_z300", nil);
     self.label1.text = NSLocalizedString(@"step1", nil);
     self.label2.text = NSLocalizedString(@"select_device", nil);
-    self.label3.text = @"设备ID";
+    self.label3.text = NSLocalizedString(@"设备ID", nil);
 //    self.label4.text = @"设备连接的WiFi";
     self.label5.text = NSLocalizedString(@"step2", nil);
     self.label6.text = NSLocalizedString(@"select_wifi", nil);
@@ -64,7 +64,6 @@
     
     self.textfield1.text = @"medica_2";
     self.textfield2.text = @"11221122";
-    
 }
 
 
@@ -75,6 +74,7 @@
 }
 
 - (IBAction)configureAction:(id)sender {
+    
     if (![SLPBLESharedManager blueToothIsOpen]) {
         NSString *message = NSLocalizedString(@"reminder_connect_ble", nil);
         UIAlertView *alertview =[[ UIAlertView alloc]initWithTitle:nil message:message delegate:self cancelButtonTitle:NSLocalizedString(@"btn_ok", nil) otherButtonTitles: nil];
@@ -120,6 +120,5 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
 
 @end
