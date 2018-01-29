@@ -447,7 +447,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"-force_load",
-					"$(SRCROOT)/BLEWifiConfig.framework/BLEWifiConfig",
+					"$(SRCROOT)/BluetoothManager.framework/BluetoothManager",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.medicatech.BLESDKDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -471,7 +471,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"-force_load",
-					"$(SRCROOT)/BLEWifiConfig.framework/BLEWifiConfig",
+					"$(SRCROOT)/BluetoothManager.framework/BluetoothManager",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.medicatech.BLESDKDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
