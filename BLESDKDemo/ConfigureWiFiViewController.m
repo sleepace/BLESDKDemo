@@ -84,16 +84,20 @@
     
     [con configPeripheral:currentPer.peripheral deviceType:SLPDeviceType_WIFIReston serverAddress:@"172.14.1.100" port:9010 wifiName:self.textfield1.text password:self.textfield2.text completion:^(BOOL succeed, id data) {
         NSString *result=@"";
+        NSString *title=nil;
         if (succeed) {
             NSLog(@"send succeed!");
-            result = NSLocalizedString(@"reminder_configuration_success", nil);
+            title = NSLocalizedString(@"reminder_configuration_success", nil);
+            SLPDeviceInfo *deviceInfo= (SLPDeviceInfo *)data;
+            result =[NSString stringWithFormat:@"deviceId=%@,version=%@",deviceInfo.deviceID,deviceInfo.version];
         }
         else
         {
             NSLog(@"send failed!");
             result = NSLocalizedString(@"reminder_configuration_fail", nil);
         }
-        UIAlertView *alertview =[[ UIAlertView alloc]initWithTitle:nil message:result delegate:self cancelButtonTitle:NSLocalizedString(@"btn_ok", nil) otherButtonTitles: nil];
+        
+        UIAlertView *alertview =[[ UIAlertView alloc]initWithTitle:title message:result delegate:self cancelButtonTitle:NSLocalizedString(@"btn_ok", nil) otherButtonTitles: nil];
         [alertview show];
     }];
 }
