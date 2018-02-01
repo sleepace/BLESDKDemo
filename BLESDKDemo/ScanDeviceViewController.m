@@ -45,8 +45,19 @@
     
     BOOL isOpen=[SLPBLESharedManager blueToothIsOpen];
     [self performSelector:@selector(pressRefresh:) withObject:nil afterDelay:1.0f];
+    [self openBle];
 }
 
+
+- (void)openBle
+{
+    if (![SLPBLESharedManager blueToothIsOpen]) {
+        NSString *message = NSLocalizedString(@"require_ble", nil);
+        UIAlertView *alertview =[[ UIAlertView alloc]initWithTitle:nil message:message delegate:self cancelButtonTitle:NSLocalizedString(@"btn_ok", nil) otherButtonTitles: nil];
+        [alertview show];
+        return ;
+    }
+}
 
 - (IBAction)back:(id)sender {
     

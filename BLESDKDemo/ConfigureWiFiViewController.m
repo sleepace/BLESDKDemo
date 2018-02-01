@@ -9,12 +9,12 @@
 #import "ConfigureWiFiViewController.h"
 #import "ScanDeviceViewController.h"
 #import <BLEWifiConfig/SLPBleWifiConfig.h>
+#import "MBProgressHUD.h"
 
-@interface ConfigureWiFiViewController ()<ScanDeviceDelegate>
+@interface ConfigureWiFiViewController ()<ScanDeviceDelegate,UITextFieldDelegate>
 {
     SLPPeripheralInfo *currentPer;
     SLPBleWifiConfig *con;
-    BOOL isOpen;
 }
 @property (nonatomic,weak) IBOutlet UILabel *titleLabel;
 @property (nonatomic,weak) IBOutlet UILabel *label1;
@@ -38,7 +38,6 @@
     [self setUI];
     
     con= [[SLPBleWifiConfig alloc]init];
-    isOpen=[SLPBLESharedManager blueToothIsOpen];
 }
 
 
@@ -62,12 +61,16 @@
     self.textfield1.placeholder = NSLocalizedString(@"input_wifi_name", nil);
     self.textfield2.placeholder = NSLocalizedString(@"input_wifi_psw", nil);
     
-    self.textfield1.text = @"medica_2";
-    self.textfield2.text = @"11221122";
+    self.textfield1.delegate = self;
+    self.textfield2.delegate = self;
+    
+//    self.textfield1.text = @"medica_2";
+//    self.textfield2.text = @"11221122";
 }
 
 
 - (IBAction)pushToSelectDeviceView:(id)sender {
+     [self resignTextfiled];
     ScanDeviceViewController *scanVC = [[ScanDeviceViewController alloc]initWithNibName:@"ScanDeviceViewController" bundle:nil];
     scanVC.delegate = self;
     [self.navigationController pushViewController:scanVC animated:YES];
@@ -81,15 +84,28 @@
         [alertview show];
         return ;
     }
+    if (!self.label4.text.length) {
+        NSString *message = NSLocalizedString(@"select_device", nil);
+        UIAlertView *alertview =[[ UIAlertView alloc]initWithTitle:nil message:message delegate:self cancelButtonTitle:NSLocalizedString(@"btn_ok", nil) otherButtonTitles: nil];
+        [alertview show];
+        return ;
+    }
+    if (!self.textfield1.text.length) {
+        NSString *message = NSLocalizedString(@"input_wifi_name", nil);
+        UIAlertView *alertview =[[ UIAlertView alloc]initWithTitle:nil message:message delegate:self cancelButtonTitle:NSLocalizedString(@"btn_ok", nil) otherButtonTitles: nil];
+        [alertview show];
+        return ;
+    }
     
-    [con configPeripheral:currentPer.peripheral deviceType:SLPDeviceType_WIFIReston serverAddress:@"172.14.1.100" port:9010 wifiName:self.textfield1.text password:self.textfield2.text completion:^(BOOL succeed, id data) {
+    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    [con configPeripheral:currentPer.peripheral deviceType:SLPDeviceType_WIFIReston serverAddress:@"120.24.169.204" port:9010 wifiName:self.textfield1.text password:self.textfield2.text completion:^(BOOL succeed, id data) {
+        [MBProgressHUD hideHUDForView:self.view animated:YES];
         NSString *result=@"";
-        NSString *title=nil;
         if (succeed) {
             NSLog(@"send succeed!");
-            title = NSLocalizedString(@"reminder_configuration_success", nil);
-            SLPDeviceInfo *deviceInfo= (SLPDeviceInfo *)data;
-            result =[NSString stringWithFormat:@"deviceId=%@,version=%@",deviceInfo.deviceID,deviceInfo.version];
+            result = NSLocalizedString(@"reminder_configuration_success", nil);
+//            SLPDeviceInfo *deviceInfo= (SLPDeviceInfo *)data;
+//            result =[NSString stringWithFormat:@"deviceId=%@,version=%@",deviceInfo.deviceID,deviceInfo.version];
         }
         else
         {
@@ -97,11 +113,31 @@
             result = NSLocalizedString(@"reminder_configuration_fail", nil);
         }
         
-        UIAlertView *alertview =[[ UIAlertView alloc]initWithTitle:title message:result delegate:self cancelButtonTitle:NSLocalizedString(@"btn_ok", nil) otherButtonTitles: nil];
+        UIAlertView *alertview =[[ UIAlertView alloc]initWithTitle:nil message:result delegate:self cancelButtonTitle:NSLocalizedString(@"btn_ok", nil) otherButtonTitles: nil];
         [alertview show];
     }];
 }
 
+
+- (void)textFieldDidBeginEditing:(UITextField *)textField
+{
+    [UIView animateWithDuration:0.5 animations:^{
+        CGRect rect=self.view.frame;
+        CGFloat y_value=rect.origin.y-120;
+        rect.origin.y=y_value;
+        self.view.frame=rect;
+    }];
+}
+
+- (void)textFieldDidEndEditing:(UITextField *)textField
+{
+    [UIView animateWithDuration:0.3 animations:^{
+        CGRect rect=self.view.frame;
+        CGFloat y_value=rect.origin.y+120;
+        rect.origin.y=y_value;
+        self.view.frame=rect;
+    }];
+}
 
 #pragma mark -ScanDeviceDelegate
 - (void)didSelectPeripheal:(SLPPeripheralInfo *)peripheralInfo
@@ -111,6 +147,11 @@
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    [self resignTextfiled];
+}
+
+- (void)resignTextfiled
 {
     if (self.textfield1.isEditing) {
         [self.textfield1 resignFirstResponder];

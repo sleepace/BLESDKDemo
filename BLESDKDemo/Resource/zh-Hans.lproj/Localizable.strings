@@ -27,4 +27,7 @@
 "reminder_connect_hotspot2"="请检查你的手机是否成功连接设备热点";
 "search_device"="搜索设备ID";
 "refreshing"="正在刷新…";
+"require_ble"="连接设备需要开启手机蓝牙功能，是否开启蓝牙？";
+"btn_no"="否";
+"btn_turnon"="开启";
 

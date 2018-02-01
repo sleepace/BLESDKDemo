@@ -27,4 +27,6 @@
 "reminder_connect_hotspot2"="Please check if your WLAN is connected successful";
 "search_device"="Search Device ID";
 "refreshing"="Refreshing…";
-
+"require_ble"="Device connection requires Bluetooth; turn on Bluetooth?";
+"btn_no"="No";
+"btn_turnon"="Turn On";
