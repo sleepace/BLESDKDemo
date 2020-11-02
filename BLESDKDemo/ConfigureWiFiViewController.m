@@ -94,14 +94,14 @@
         NSString *message = NSLocalizedString(@"input_wifi_name", nil);
         UIAlertView *alertview =[[ UIAlertView alloc]initWithTitle:nil message:message delegate:self cancelButtonTitle:NSLocalizedString(@"btn_ok", nil) otherButtonTitles: nil];
         [alertview show];
-        return ;
+        return;
     }
     
     [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-    [con configPeripheral:currentPer.peripheral deviceType:SLPDeviceType_WIFIReston serverAddress:@"120.24.169.204" port:9010 wifiName:self.textfield1.text password:self.textfield2.text completion:^(BOOL succeed, id data) {
+    [con configPeripheral:currentPer.peripheral deviceType:SLPDeviceType_WIFIReston serverAddress:@"120.24.169.204" port:9010 wifiName:self.textfield1.text password:self.textfield2.text completion:^(SLPDataTransferStatus status, id data) {
         [MBProgressHUD hideHUDForView:self.view animated:YES];
         NSString *result=@"";
-        if (succeed) {
+        if (status == SLPDataTransferStatus_Succeed) {
             NSLog(@"send succeed!");
             result = NSLocalizedString(@"reminder_configuration_success", nil);
 //            SLPDeviceInfo *deviceInfo= (SLPDeviceInfo *)data;
