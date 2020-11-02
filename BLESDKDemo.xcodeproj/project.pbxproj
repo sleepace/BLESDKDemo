@@ -43,6 +43,10 @@
 		267A080D2019D8420025AC13 /* sdk_dot_87.png in Resources */ = {isa = PBXBuildFile; fileRef = 267A07F52019D8420025AC13 /* sdk_dot_87.png */; };
 		267A080E2019D8420025AC13 /* sdk_btn_back@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 267A07F62019D8420025AC13 /* sdk_btn_back@3x.png */; };
 		267A080F2019D8420025AC13 /* sdk_btn_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 267A07F72019D8420025AC13 /* sdk_btn_back@2x.png */; };
+		5BBBDD23214BC4F20063E9B8 /* ChooseDeviceTypeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BBBDD21214BC4F20063E9B8 /* ChooseDeviceTypeVC.m */; };
+		5BBBDD24214BC4F20063E9B8 /* ChooseDeviceTypeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BBBDD22214BC4F20063E9B8 /* ChooseDeviceTypeVC.xib */; };
+		5BBBDD28214BC92D0063E9B8 /* SetServerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BBBDD26214BC92D0063E9B8 /* SetServerViewController.m */; };
+		5BBBDD29214BC92D0063E9B8 /* SetServerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BBBDD27214BC92D0063E9B8 /* SetServerViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +54,12 @@
 		2607FAD820205BED000C576F /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		2607FAD920205BED000C576F /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		2607FADA20205BED000C576F /* README.mdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.mdown; sourceTree = "<group>"; };
+		2644D6FD248F187E0010E9CB /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		2644D6FE248F187E0010E9CB /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2644D6FF248F187E0010E9CB /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2644D700248F18960010E9CB /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		2644D701248F18960010E9CB /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2644D702248F18960010E9CB /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		266CF1BA201B03A100B57C32 /* BLEWifiConfig.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BLEWifiConfig.framework; sourceTree = "<group>"; };
 		266CF1BB201B03A100B57C32 /* SLPCommon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SLPCommon.framework; sourceTree = "<group>"; };
 		266CF1BC201B03A100B57C32 /* BluetoothManager.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BluetoothManager.framework; sourceTree = "<group>"; };
@@ -90,6 +100,12 @@
 		267A07F52019D8420025AC13 /* sdk_dot_87.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sdk_dot_87.png; sourceTree = "<group>"; };
 		267A07F62019D8420025AC13 /* sdk_btn_back@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sdk_btn_back@3x.png"; sourceTree = "<group>"; };
 		267A07F72019D8420025AC13 /* sdk_btn_back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sdk_btn_back@2x.png"; sourceTree = "<group>"; };
+		5BBBDD20214BC4F20063E9B8 /* ChooseDeviceTypeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChooseDeviceTypeVC.h; sourceTree = "<group>"; };
+		5BBBDD21214BC4F20063E9B8 /* ChooseDeviceTypeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChooseDeviceTypeVC.m; sourceTree = "<group>"; };
+		5BBBDD22214BC4F20063E9B8 /* ChooseDeviceTypeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChooseDeviceTypeVC.xib; sourceTree = "<group>"; };
+		5BBBDD25214BC92D0063E9B8 /* SetServerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SetServerViewController.h; sourceTree = "<group>"; };
+		5BBBDD26214BC92D0063E9B8 /* SetServerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SetServerViewController.m; sourceTree = "<group>"; };
+		5BBBDD27214BC92D0063E9B8 /* SetServerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SetServerViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +171,12 @@
 				267A07642019B6CA0025AC13 /* ConfigureWiFiViewController.h */,
 				267A07632019B6CA0025AC13 /* ConfigureWiFiViewController.m */,
 				267A07652019B6CA0025AC13 /* ConfigureWiFiViewController.xib */,
+				5BBBDD25214BC92D0063E9B8 /* SetServerViewController.h */,
+				5BBBDD26214BC92D0063E9B8 /* SetServerViewController.m */,
+				5BBBDD27214BC92D0063E9B8 /* SetServerViewController.xib */,
+				5BBBDD20214BC4F20063E9B8 /* ChooseDeviceTypeVC.h */,
+				5BBBDD21214BC4F20063E9B8 /* ChooseDeviceTypeVC.m */,
+				5BBBDD22214BC4F20063E9B8 /* ChooseDeviceTypeVC.xib */,
 				267A077A2019BE140025AC13 /* ScanDeviceViewController.h */,
 				267A077B2019BE140025AC13 /* ScanDeviceViewController.m */,
 				267A077C2019BE140025AC13 /* ScanDeviceViewController.xib */,
@@ -254,6 +276,8 @@
 				Base,
 				"zh-Hans",
 				en,
+				ja,
+				ko,
 			);
 			mainGroup = 267A073C20197DC00025AC13;
 			productRefGroup = 267A074620197DC00025AC13 /* Products */;
@@ -288,6 +312,7 @@
 				267A08092019D8420025AC13 /* sdk_dot_40.png in Resources */,
 				267A080D2019D8420025AC13 /* sdk_dot_87.png in Resources */,
 				267A07722019BD3A0025AC13 /* sdk_btn_refresh_nor@3x.png in Resources */,
+				5BBBDD29214BC92D0063E9B8 /* SetServerViewController.xib in Resources */,
 				267A077E2019BE140025AC13 /* ScanDeviceViewController.xib in Resources */,
 				267A07712019BD3A0025AC13 /* sdk_btn_refresh_nor@2x.png in Resources */,
 				267A080A2019D8420025AC13 /* sdk_dot_108.png in Resources */,
@@ -297,6 +322,7 @@
 				267A080C2019D8420025AC13 /* sdk_dot_120.png in Resources */,
 				267A080B2019D8420025AC13 /* sdk_dot_80.png in Resources */,
 				267A075220197DC00025AC13 /* Assets.xcassets in Resources */,
+				5BBBDD24214BC4F20063E9B8 /* ChooseDeviceTypeVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,8 +334,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				267A07662019B6CA0025AC13 /* ConfigureWiFiViewController.m in Sources */,
+				5BBBDD23214BC4F20063E9B8 /* ChooseDeviceTypeVC.m in Sources */,
 				267A077D2019BE140025AC13 /* ScanDeviceViewController.m in Sources */,
 				2607FADB20205BED000C576F /* MBProgressHUD.m in Sources */,
+				5BBBDD28214BC92D0063E9B8 /* SetServerViewController.m in Sources */,
 				267A075820197DC00025AC13 /* main.m in Sources */,
 				267A074A20197DC00025AC13 /* AppDelegate.m in Sources */,
 			);
@@ -323,6 +351,8 @@
 			children = (
 				2671AB94201C104D00027F6E /* en */,
 				2671AB96201C105100027F6E /* zh-Hans */,
+				2644D6FF248F187E0010E9CB /* ja */,
+				2644D702248F18960010E9CB /* ko */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -331,6 +361,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				267A075420197DC00025AC13 /* Base */,
+				2644D6FD248F187E0010E9CB /* ja */,
+				2644D700248F18960010E9CB /* ko */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -340,6 +372,8 @@
 			children = (
 				267A078B2019C66C0025AC13 /* zh-Hans */,
 				267A078C2019C6B20025AC13 /* en */,
+				2644D6FE248F187E0010E9CB /* ja */,
+				2644D701248F18960010E9CB /* ko */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -458,7 +492,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NV3296URNT;
+				CURRENT_PROJECT_VERSION = 10000;
+				DEVELOPMENT_TEAM = T3348QM7CT;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -467,11 +502,14 @@
 				INFOPLIST_FILE = BLESDKDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 2.0.0;
 				OTHER_LDFLAGS = (
 					"-force_load",
 					"$(SRCROOT)/BluetoothManager.framework/BluetoothManager",
+					"-force_load",
+					"$(SRCROOT)/BLEWifiConfig.framework/BLEWifiConfig",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.medicatech.BLESDKDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.medicatech.BLESDKDemos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -482,7 +520,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NV3296URNT;
+				CURRENT_PROJECT_VERSION = 10000;
+				DEVELOPMENT_TEAM = T3348QM7CT;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -491,11 +530,14 @@
 				INFOPLIST_FILE = BLESDKDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 2.0.0;
 				OTHER_LDFLAGS = (
 					"-force_load",
 					"$(SRCROOT)/BluetoothManager.framework/BluetoothManager",
+					"-force_load",
+					"$(SRCROOT)/BLEWifiConfig.framework/BLEWifiConfig",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.medicatech.BLESDKDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.medicatech.BLESDKDemos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

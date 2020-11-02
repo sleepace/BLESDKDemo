@@ -21,7 +21,7 @@
 "reminder_connect_ble"="确保手机已打开蓝牙，且与设备的距离不要超过5米";
 "btn_ok"="确定";
 "loading_pair_wifi"="正在配置Wi-Fi…";
-"reminder_configuration_success"="Wi-Fi配置成功";
+"reminder_configuration_success"="Wi-Fi名称和密码发送成功 ";
 "reminder_configuration_fail"="Wi-Fi配置失败";
 "reminder_connect_wifi"="请先将手机连接上Wi-Fi";
 "reminder_connect_hotspot2"="请检查你的手机是否成功连接设备热点";
@@ -30,4 +30,4 @@
 "require_ble"="连接设备需要开启手机蓝牙功能，是否开启蓝牙？";
 "btn_no"="否";
 "btn_turnon"="开启";
-
+"ip_address" ="设备要连接的服务器信息";

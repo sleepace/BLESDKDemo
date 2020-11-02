@@ -7,6 +7,6 @@
 */
 
 CFBundleDisplayName = "WLAN Config. via BLE";
-
+NSBluetoothAlwaysUsageDescription ="Please turn on Bluetooth in \"Settings>Bluetooth\". Otherwise, device can not be connected.";
 
 

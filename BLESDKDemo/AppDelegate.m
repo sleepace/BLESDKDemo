@@ -19,8 +19,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    ConfigureWiFiViewController *configureVC=[[ConfigureWiFiViewController alloc]init];
-    UINavigationController *unc = [[UINavigationController alloc]initWithRootViewController:configureVC];
+    ConfigureWiFiViewController *rootVC=[[ConfigureWiFiViewController alloc]init];
+    UINavigationController *unc = [[UINavigationController alloc]initWithRootViewController:rootVC];
     unc.navigationBar.hidden=YES;
     self.window.rootViewController = unc;
     [self.window  makeKeyAndVisible];
