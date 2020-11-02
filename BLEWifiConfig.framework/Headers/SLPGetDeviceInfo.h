@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SLPGetDeviceInfo : NSObject
 
+@property (nonatomic,copy)  NSString *deviceName;//设备名
 @property (nonatomic,copy)  NSString *deviceID;//设备ID UTF-8 带结束符( 例: "qiwueiuqwyeui" )
 @property (nonatomic,assign) ushort  deviceType;
 @property (nonatomic,copy) NSString *currentHardwareVersion;//硬件版本
