@@ -73,8 +73,8 @@
     
     self.deviceType = SLPDeviceType_WIFIReston;
     //default
-    self.textfield3.text = @"172.14.0.111";
-    self.textfield4.text = @"29010";
+    self.textfield3.text = @"120.24.68.136";
+    self.textfield4.text = @"29014";
     
     self.textfield1.delegate = self;
     self.textfield2.delegate = self;
@@ -219,7 +219,10 @@
         }];
     }
     else
-    {        
+    {
+        
+    
+        
         [con configPeripheral:currentPer.peripheral deviceType:self.deviceType serverAddress:self.textfield3.text port:[self.textfield4.text integerValue] wifiName:self.textfield1.text password:self.textfield2.text completion:^(SLPDataTransferStatus status, id data) {
             [MBProgressHUD hideHUDForView:self.view animated:YES];
             NSString *result=@"";
