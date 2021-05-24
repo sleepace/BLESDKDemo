@@ -12,4 +12,5 @@
 #import "SLPWiFiConnectStatus.h"
 #import "SLPGetWiFiInfo.h"
 
-#define BLEWifiConfigVersion  @"3.0.0"
+
+

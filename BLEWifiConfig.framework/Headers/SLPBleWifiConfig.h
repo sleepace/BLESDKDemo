@@ -67,4 +67,13 @@
                           deviceType:(SLPDeviceTypes)deviceType
                           completion:(void(^)(BOOL succeed ,id data))completion;
 
+/**
+获取ip信息(针对特定设备有效，支持设备<FH61W,>)
+ @param peripheral 外设
+ @param deviceType 设备类型
+ @param completion 回调WiFi连接状态
+ */
+- (void)getIpInfo:(CBPeripheral *)peripheral
+       deviceType:(SLPDeviceTypes)deviceType
+       completion:(void(^)(BOOL succeed, id data))completion;
 @end
