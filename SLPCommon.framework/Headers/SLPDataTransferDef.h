@@ -87,6 +87,7 @@ typedef NS_ENUM(NSInteger,SLPDeviceTypes) {
     SLPDeviceType_BM8701 = 0x8099, // BM8701
     SLPDeviceType_FH601W = 0x8013, // FH601W
     SLPDeviceType_TWP3 = 0x5009,//TWP-3
+    SLPDeviceType_SONGXIA_TWP3 = 20493,//TWP-3松下定制
 };
 
 //样本数据的人群类型 目前只有男性和女性
