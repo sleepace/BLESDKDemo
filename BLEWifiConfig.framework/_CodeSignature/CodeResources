@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/BLEWifiConfig.h</key>
 		<data>
-		90adgO0wJRbwtSqk0yR0JF9Kjsc=
+		mkXbYOG7KLSbLjVGs5W54+MyAKQ=
 		</data>
 		<key>Headers/SLPBleWifiConfig.h</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		RcF2Lnp2RAVJgUWWOWdJk42dQ30=
+		nn0TRVUjHer7sIk0prFe5Yctk5U=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -39,11 +39,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			90adgO0wJRbwtSqk0yR0JF9Kjsc=
+			mkXbYOG7KLSbLjVGs5W54+MyAKQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			Hkj7R1WQvQ1ka3tbMG85QSUYfIgmWMgXlxJVVPnLtME=
+			iOkgtGf1uJ8lcqWkBM9Xuc7e1g5B+4iSZSfyz2bQybM=
 			</data>
 		</dict>
 		<key>Headers/SLPBleWifiConfig.h</key>

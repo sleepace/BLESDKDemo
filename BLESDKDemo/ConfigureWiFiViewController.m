@@ -151,6 +151,18 @@
     {
         self.deviceType = SLPDeviceType_TWP3;
     }
+    else if ([devicename hasPrefix:@"SM100"])
+    {
+        self.deviceType = SLPDeviceType_SM100;
+    }
+    else if ([devicename hasPrefix:@"SM200"])
+    {
+        self.deviceType = SLPDeviceType_SM200;
+    }
+    else if ([devicename hasPrefix:@"SM300"])
+    {
+        self.deviceType = SLPDeviceType_SM300;
+    }
 //    else if ([devicename hasPrefix:@"BG02"])
 //    {
 //        self.deviceType = SLPDeviceType_BG002;
