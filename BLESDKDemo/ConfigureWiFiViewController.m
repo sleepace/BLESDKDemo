@@ -81,8 +81,8 @@
     self.textfield3.delegate = self;
     self.textfield4.delegate = self;
     
-        self.textfield1.text = @"SAN";
-        self.textfield2.text = @"l123456789";
+//        self.textfield1.text = @"SAN";
+//        self.textfield2.text = @"l123456789";
     if ([[NSUserDefaults standardUserDefaults]objectForKey:@"WiFiName"]) {
         self.textfield1.text = [[NSUserDefaults standardUserDefaults]objectForKey:@"WiFiName"];
     }
