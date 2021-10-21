@@ -93,7 +93,11 @@ typedef NS_ENUM(NSInteger,SLPBLEMessagetUniqTypes) {
     SLPBLEMessagetUniqType_PillowHistorySummaryQuery,//历史数据的概要查询
     SLPBLEMessagetUniqType_PillowHistoryBoundaryQuery,//历史数据的边界查询
     SLPBLEMessagetUniqType_PillowDownloadHistoryData,//历史数据下载
+    SLPBLEMessagetUniqType_AutoPillowHistorySummaryQuery,//历史数据的概要查询(全自动)
+    SLPBLEMessagetUniqType_AutoPillowHistoryBoundaryQuery,//历史数据的边界查询(全自动)
+    SLPBLEMessagetUniqType_AutoPillowDownloadHistoryData,//历史数据下载(全自动)
     SLPBLEMessagetUniqType_PillowDownloadHistoryDataAdditional,//带温湿度的历史数据下载
+    SLPBLEMessagetUniqType_AutoPillowDownloadHistoryDataAdditional,//带温湿度的历史数据下载(全自动)
     SLPBLEMessagetUniqType_PillowPostStatus,//控制盒状态上报  设备->APP
     SLPBLEMessagetUniqType_PillowUpgradeSummery,//概要上传请求
     SLPBLEMessagetUniqType_PillowUpgradeContent,//内容上传请求
@@ -185,7 +189,6 @@ typedef NS_ENUM(NSInteger,SLPBLEMessagetUniqTypes) {
     SLPBLEMessagetUniqType_SABGetPINCode,//获取PIN码
     SLPBLEMessagetUniqType_SABGetSenceConfig,//获取场景
     
-    
     //Binatone
     SLPBLEMessagetUniqType_BinatoneLogin,//reston登录
     SLPBLEMessagetUniqType_BinatoneSetSmartWake,//设置智能唤醒
@@ -230,7 +233,7 @@ typedef NS_ENUM(NSInteger,SLPBLEMessagetUniqTypes) {
     //FH61W
     SLPBLEMessagetUniqType_FH61W_GetDeviceInfo,//获取设备信息
     SLPBLEMessagetUniqType_FH61W_GetDeviceIpInfo,//获取ip信息
-
+    
     //通用ID
     SLPBLEMessagetUniqType_ProtocolOne,//蓝牙最老版协议 比如Reston Pillow
     SLPBLEMessagetUniqType_ProtocolTwo,//蓝牙新版协议 枕头以及后面的nox2
