@@ -12,5 +12,5 @@
 #import "SLPWiFiConnectStatus.h"
 #import "SLPGetWiFiInfo.h"
 
-#define kBLEWifiConfigVersion  @"3.0.1_20211022"
+#define kBLEWifiConfigVersion  @"3.0.1"
 
