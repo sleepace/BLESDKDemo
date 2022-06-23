@@ -92,6 +92,7 @@ typedef NS_ENUM(NSInteger,SLPDeviceTypes) {
     SLPDeviceType_SM100 = 0x500E,//FH601W - 医疗定制版
     SLPDeviceType_SM200 = 0x500F,//BM8701 - 医疗定制版
     SLPDeviceType_SM300 = 0x5101,//M8701W - 医疗定制版
+    SLPDeviceType_M901L = 0x003B,//M901L
 
 };
 

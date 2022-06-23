@@ -162,6 +162,10 @@
     {
         self.deviceType = SLPDeviceType_SM300;
     }
+    else if ([devicename hasPrefix:@"M901"])
+    {
+        self.deviceType = SLPDeviceType_M901L;
+    }
 //    else if ([devicename hasPrefix:@"BG02"])
 //    {
 //        self.deviceType = SLPDeviceType_BG002;
@@ -239,9 +243,6 @@
     }
     else
     {
-        
-    
-        
         [con configPeripheral:currentPer.peripheral deviceType:self.deviceType serverAddress:self.textfield3.text port:[self.textfield4.text integerValue] wifiName:self.textfield1.text password:self.textfield2.text completion:^(SLPDataTransferStatus status, id data) {
             [MBProgressHUD hideHUDForView:self.view animated:YES];
             NSString *result=@"";
