@@ -33,6 +33,9 @@
 
 @property (nonatomic,weak) IBOutlet UILabel *version;
 
+@property (nonatomic,assign) BOOL  showWiFi;
+
+
 @end
 
 @implementation ConfigureWiFiViewController
@@ -43,12 +46,13 @@
     [self setUI];
     
     con= [[SLPBleWifiConfig alloc]init];
+    [self addChangeServerUI];
 }
 
 
 - (void)setUI
 {
-    self.titleLabel.text = @"BLE to Wi-Fi";
+    self.titleLabel.text = @"IP 配置";
     self.label1.text = NSLocalizedString(@"step1", nil);
     self.label2.text = NSLocalizedString(@"select_device", nil);
     self.label3.text = NSLocalizedString(@"select_device", nil);
@@ -72,9 +76,10 @@
     self.textfield2.placeholder = NSLocalizedString(@"input_wifi_psw", nil);
     
     self.deviceType = SLPDeviceType_WIFIReston;
+    self.showWiFi = NO;
     //default
-//    self.textfield3.text = @"120.24.68.136";
-//    self.textfield4.text = @"29014";
+    self.textfield3.text = @"120.24.68.136";
+    self.textfield4.text = @"29014";
     
     self.textfield1.delegate = self;
     self.textfield2.delegate = self;
@@ -95,6 +100,16 @@
     if ([[NSUserDefaults standardUserDefaults]objectForKey:@"port"]) {
         self.textfield4.text = [[NSUserDefaults standardUserDefaults]objectForKey:@"port"];
     }
+    
+    [self showWIFIView:self.showWiFi];
+}
+
+
+- (void)showWIFIView:(BOOL)show{
+    self.textfield1.hidden = !show;
+    self.textfield2.hidden = !show;
+    self.label5.hidden = !show;
+    self.label6.hidden = !show;
 }
 
 - (void)didSelectDeviceType:(NSString *)devicename{
@@ -175,6 +190,18 @@
     }
 }
 
+- (void)addChangeServerUI{
+    [self.titleLabel setUserInteractionEnabled:YES];
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tap:)];
+    [tap setNumberOfTapsRequired:10];
+    [self.titleLabel addGestureRecognizer:tap];
+}
+
+- (void)tap:(UITapGestureRecognizer *)tapGesture{
+    self.showWiFi = YES;
+    [self showWIFIView:self.showWiFi];
+}
+
 - (IBAction)pushToSelectDeviceView:(id)sender {
     [self resignTextfiled];
     ScanDeviceViewController *scanVC = [[ScanDeviceViewController alloc]initWithNibName:@"ScanDeviceViewController" bundle:nil];
@@ -196,12 +223,13 @@
         [alertview show];
         return ;
     }
-    if (!self.textfield1.text.length) {
-        NSString *message = NSLocalizedString(@"input_wifi_name", nil);
-        UIAlertView *alertview =[[ UIAlertView alloc]initWithTitle:nil message:message delegate:self cancelButtonTitle:NSLocalizedString(@"btn_ok", nil) otherButtonTitles: nil];
-        [alertview show];
-        return ;
-    }
+    
+//    if (!self.textfield1.text.length) {
+//        NSString *message = NSLocalizedString(@"input_wifi_name", nil);
+//        UIAlertView *alertview =[[ UIAlertView alloc]initWithTitle:nil message:message delegate:self cancelButtonTitle:NSLocalizedString(@"btn_ok", nil) otherButtonTitles: nil];
+//        [alertview show];
+//        return ;
+//    }
     
     if (self.textfield3.text.length == 0&&self.deviceType !=SLPDeviceType_NOX2_WiFi){
         UIAlertView *alertview = [[UIAlertView alloc] initWithTitle:nil message:@"Server address can not be empty" delegate:nil cancelButtonTitle:@"Confirm" otherButtonTitles:nil, nil];;

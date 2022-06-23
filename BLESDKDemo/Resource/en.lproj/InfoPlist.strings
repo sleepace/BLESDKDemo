@@ -6,7 +6,7 @@
   Copyright © 2018年 medica. All rights reserved.
 */
 
-CFBundleDisplayName = "WLAN Config. via BLE";
+CFBundleDisplayName = "IP 配置";
 NSBluetoothAlwaysUsageDescription ="Please turn on Bluetooth in \"Settings>Bluetooth\". Otherwise, device can not be connected.";
 
 
