@@ -43,6 +43,8 @@
 		267A080D2019D8420025AC13 /* sdk_dot_87.png in Resources */ = {isa = PBXBuildFile; fileRef = 267A07F52019D8420025AC13 /* sdk_dot_87.png */; };
 		267A080E2019D8420025AC13 /* sdk_btn_back@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 267A07F62019D8420025AC13 /* sdk_btn_back@3x.png */; };
 		267A080F2019D8420025AC13 /* sdk_btn_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 267A07F72019D8420025AC13 /* sdk_btn_back@2x.png */; };
+		26D3CCDA2865A38F00B6CA46 /* ConfigureAPNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D3CCD82865A38F00B6CA46 /* ConfigureAPNViewController.m */; };
+		26D3CCDB2865A38F00B6CA46 /* ConfigureAPNViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26D3CCD92865A38F00B6CA46 /* ConfigureAPNViewController.xib */; };
 		5BBBDD23214BC4F20063E9B8 /* ChooseDeviceTypeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BBBDD21214BC4F20063E9B8 /* ChooseDeviceTypeVC.m */; };
 		5BBBDD24214BC4F20063E9B8 /* ChooseDeviceTypeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BBBDD22214BC4F20063E9B8 /* ChooseDeviceTypeVC.xib */; };
 		5BBBDD28214BC92D0063E9B8 /* SetServerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BBBDD26214BC92D0063E9B8 /* SetServerViewController.m */; };
@@ -100,6 +102,9 @@
 		267A07F52019D8420025AC13 /* sdk_dot_87.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sdk_dot_87.png; sourceTree = "<group>"; };
 		267A07F62019D8420025AC13 /* sdk_btn_back@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sdk_btn_back@3x.png"; sourceTree = "<group>"; };
 		267A07F72019D8420025AC13 /* sdk_btn_back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sdk_btn_back@2x.png"; sourceTree = "<group>"; };
+		26D3CCD72865A38F00B6CA46 /* ConfigureAPNViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConfigureAPNViewController.h; sourceTree = "<group>"; };
+		26D3CCD82865A38F00B6CA46 /* ConfigureAPNViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConfigureAPNViewController.m; sourceTree = "<group>"; };
+		26D3CCD92865A38F00B6CA46 /* ConfigureAPNViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConfigureAPNViewController.xib; sourceTree = "<group>"; };
 		5BBBDD20214BC4F20063E9B8 /* ChooseDeviceTypeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChooseDeviceTypeVC.h; sourceTree = "<group>"; };
 		5BBBDD21214BC4F20063E9B8 /* ChooseDeviceTypeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChooseDeviceTypeVC.m; sourceTree = "<group>"; };
 		5BBBDD22214BC4F20063E9B8 /* ChooseDeviceTypeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChooseDeviceTypeVC.xib; sourceTree = "<group>"; };
@@ -171,6 +176,9 @@
 				267A07642019B6CA0025AC13 /* ConfigureWiFiViewController.h */,
 				267A07632019B6CA0025AC13 /* ConfigureWiFiViewController.m */,
 				267A07652019B6CA0025AC13 /* ConfigureWiFiViewController.xib */,
+				26D3CCD72865A38F00B6CA46 /* ConfigureAPNViewController.h */,
+				26D3CCD82865A38F00B6CA46 /* ConfigureAPNViewController.m */,
+				26D3CCD92865A38F00B6CA46 /* ConfigureAPNViewController.xib */,
 				5BBBDD25214BC92D0063E9B8 /* SetServerViewController.h */,
 				5BBBDD26214BC92D0063E9B8 /* SetServerViewController.m */,
 				5BBBDD27214BC92D0063E9B8 /* SetServerViewController.xib */,
@@ -307,6 +315,7 @@
 				267A07672019B6CA0025AC13 /* ConfigureWiFiViewController.xib in Resources */,
 				267A076F2019BD3A0025AC13 /* sdk_icon_nav_downarrow@2x.png in Resources */,
 				267A080E2019D8420025AC13 /* sdk_btn_back@3x.png in Resources */,
+				26D3CCDB2865A38F00B6CA46 /* ConfigureAPNViewController.xib in Resources */,
 				267A07742019BD3A0025AC13 /* sdk_icon_rightarrow@2x.png in Resources */,
 				267A08032019D8420025AC13 /* sdk_dot_28.png in Resources */,
 				267A08092019D8420025AC13 /* sdk_dot_40.png in Resources */,
@@ -340,6 +349,7 @@
 				5BBBDD28214BC92D0063E9B8 /* SetServerViewController.m in Sources */,
 				267A075820197DC00025AC13 /* main.m in Sources */,
 				267A074A20197DC00025AC13 /* AppDelegate.m in Sources */,
+				26D3CCDA2865A38F00B6CA46 /* ConfigureAPNViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

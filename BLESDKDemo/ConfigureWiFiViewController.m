@@ -8,6 +8,7 @@
 
 #import "ConfigureWiFiViewController.h"
 #import "ScanDeviceViewController.h"
+#import "ConfigureAPNViewController.h"
 #import "MBProgressHUD.h"
 
 @interface ConfigureWiFiViewController ()<ScanDeviceDelegate,UITextFieldDelegate>
@@ -30,6 +31,8 @@
 @property (nonatomic,weak) IBOutlet UITextField *textfield4;
 @property (nonatomic,weak) IBOutlet UIButton *configureBT;
 @property (nonatomic,weak) IBOutlet  UIView *view1;
+@property (nonatomic,weak) IBOutlet UILabel *label9;
+@property (nonatomic,weak) IBOutlet UIButton *configureAPN;
 
 @property (nonatomic,weak) IBOutlet UILabel *version;
 
@@ -62,11 +65,12 @@
     
     self.label7.text = NSLocalizedString(@"step2", nil);
     self.label8.text = NSLocalizedString(@"ip_address", nil);
-    
+    self.label9.text = NSLocalizedString(@"本工具仅适用于M901L", nil);
     self.version.text = [NSString stringWithFormat:@"V %@",[[[NSBundle mainBundle]infoDictionary]objectForKey:@"CFBundleShortVersionString"]];
     
-    [self.configureBT setTitle:NSLocalizedString(@"pair_wifi", nil) forState:UIControlStateNormal];
+    [self.configureBT setTitle:NSLocalizedString(@"发送配置信息", nil) forState:UIControlStateNormal];
     self.configureBT.layer.cornerRadius =25.0f;
+    [self.configureAPN setTitle:NSLocalizedString(@"设置APN >", nil) forState:UIControlStateNormal];
     
     self.view1.layer.cornerRadius = 4.0f;
     self.view1.layer.borderColor = [UIColor colorWithRed:195/255.0 green:203/255.0f blue:214/255.0f alpha:1.0].CGColor;
@@ -208,6 +212,14 @@
     scanVC.delegate = self;
     [self.navigationController pushViewController:scanVC animated:YES];
 }
+
+- (IBAction)pushToAPNView:(id)sender {
+    [self resignTextfiled];
+    ConfigureAPNViewController *apnVC = [[ConfigureAPNViewController alloc]initWithNibName:@"ConfigureAPNViewController" bundle:nil];
+    apnVC.deviceType = self.deviceType;
+    [self.navigationController pushViewController:apnVC animated:YES];
+}
+
 
 - (IBAction)configureAction:(id)sender {
     
