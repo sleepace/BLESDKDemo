@@ -82,8 +82,8 @@
     self.deviceType = SLPDeviceType_WIFIReston;
     self.showWiFi = NO;
     //default
-    self.textfield3.text = @"120.24.68.136";
-    self.textfield4.text = @"29014";
+//    self.textfield3.text = @"120.24.68.136";
+//    self.textfield4.text = @"29014";
     
     self.textfield1.delegate = self;
     self.textfield2.delegate = self;
@@ -91,12 +91,12 @@
     self.textfield4.delegate = self;
 //        self.textfield1.text = @"SAN";
 //        self.textfield2.text = @"l1234567890";
-    if ([[NSUserDefaults standardUserDefaults]objectForKey:@"WiFiName"]) {
-        self.textfield1.text = [[NSUserDefaults standardUserDefaults]objectForKey:@"WiFiName"];
-    }
-    if ([[NSUserDefaults standardUserDefaults]objectForKey:@"Passoword"]) {
-        self.textfield2.text = [[NSUserDefaults standardUserDefaults]objectForKey:@"Passoword"];
-    }
+//    if ([[NSUserDefaults standardUserDefaults]objectForKey:@"WiFiName"]) {
+//        self.textfield1.text = [[NSUserDefaults standardUserDefaults]objectForKey:@"WiFiName"];
+//    }
+//    if ([[NSUserDefaults standardUserDefaults]objectForKey:@"Passoword"]) {
+//        self.textfield2.text = [[NSUserDefaults standardUserDefaults]objectForKey:@"Passoword"];
+//    }
     
     if ([[NSUserDefaults standardUserDefaults]objectForKey:@"IPAddress"]) {
         self.textfield3.text = [[NSUserDefaults standardUserDefaults]objectForKey:@"IPAddress"];
@@ -257,8 +257,8 @@
     //save service address
     [[NSUserDefaults standardUserDefaults] setObject:self.textfield3.text forKey:@"IPAddress"];
     [[NSUserDefaults standardUserDefaults] setObject:self.textfield4.text forKey:@"port"];
-    [[NSUserDefaults standardUserDefaults] setObject:self.textfield1.text forKey:@"WiFiName"];
-    [[NSUserDefaults standardUserDefaults] setObject:self.textfield2.text forKey:@"Passoword"];
+//    [[NSUserDefaults standardUserDefaults] setObject:self.textfield1.text forKey:@"WiFiName"];
+//    [[NSUserDefaults standardUserDefaults] setObject:self.textfield2.text forKey:@"Passoword"];
     [[NSUserDefaults standardUserDefaults] synchronize];
     
     [MBProgressHUD showHUDAddedTo:self.view animated:YES];

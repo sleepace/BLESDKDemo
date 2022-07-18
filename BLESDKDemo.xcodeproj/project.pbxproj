@@ -519,7 +519,7 @@
 					"-force_load",
 					"$(SRCROOT)/BLEWifiConfig.framework/BLEWifiConfig",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.medicatech.BLESDKDemos;
+				PRODUCT_BUNDLE_IDENTIFIER = com.medicatech.ipconfig;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -547,7 +547,7 @@
 					"-force_load",
 					"$(SRCROOT)/BLEWifiConfig.framework/BLEWifiConfig",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.medicatech.BLESDKDemos;
+				PRODUCT_BUNDLE_IDENTIFIER = com.medicatech.ipconfig;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

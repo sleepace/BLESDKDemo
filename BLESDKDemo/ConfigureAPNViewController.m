@@ -79,11 +79,11 @@
 
 - (IBAction)configureAction:(id)sender {
     
-    if (self.textfield1.text.length == 0){
-        UIAlertView *alertview = [[UIAlertView alloc] initWithTitle:nil message:@"APN不能为空" delegate:nil cancelButtonTitle:@"Confirm" otherButtonTitles:nil, nil];;
-        [alertview show];
-        return;
-    }
+//    if (self.textfield1.text.length == 0){
+//        UIAlertView *alertview = [[UIAlertView alloc] initWithTitle:nil message:@"APN不能为空" delegate:nil cancelButtonTitle:@"Confirm" otherButtonTitles:nil, nil];;
+//        [alertview show];
+//        return;
+//    }
     [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     
     [con configPeripheral:currentPer.peripheral deviceType:self.deviceType apn:self.textfield1.text user:nil password:nil completion:^(SLPDataTransferStatus status, id data) {
