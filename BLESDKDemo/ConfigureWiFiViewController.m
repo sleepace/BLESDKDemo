@@ -196,10 +196,10 @@
 }
 
 - (void)addChangeServerUI{
-    [self.label1 setUserInteractionEnabled:YES];
+    [self.titleLabel setUserInteractionEnabled:YES];
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tap:)];
     [tap setNumberOfTapsRequired:10];
-    [self.label1 addGestureRecognizer:tap];
+    [self.titleLabel addGestureRecognizer:tap];
 }
 
 - (void)tap:(UITapGestureRecognizer *)tapGesture{
