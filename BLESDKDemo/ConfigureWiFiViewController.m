@@ -49,6 +49,7 @@
     [self setUI];
     
     con= [[SLPBleWifiConfig alloc]init];
+    
     [self addChangeServerUI];
 }
 
@@ -195,10 +196,10 @@
 }
 
 - (void)addChangeServerUI{
-    [self.titleLabel setUserInteractionEnabled:YES];
+    [self.label1 setUserInteractionEnabled:YES];
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tap:)];
     [tap setNumberOfTapsRequired:10];
-    [self.titleLabel addGestureRecognizer:tap];
+    [self.label1 addGestureRecognizer:tap];
 }
 
 - (void)tap:(UITapGestureRecognizer *)tapGesture{
