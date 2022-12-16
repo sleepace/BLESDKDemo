@@ -170,7 +170,7 @@
     {
         self.deviceType = SLPDeviceType_SM300;
     }
-    else if ([devicename hasPrefix:@"M901"])
+    else if ([devicename hasPrefix:@"M9"])
     {
         self.deviceType = SLPDeviceType_M901L;
     }
