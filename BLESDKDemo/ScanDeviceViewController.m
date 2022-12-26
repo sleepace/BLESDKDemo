@@ -91,7 +91,7 @@
                 return ;
             }
         }
-        if (peripheralInfo.name&&peripheralInfo.name.length && [peripheralInfo.name hasPrefix:@"M901L"]) {
+        if (peripheralInfo.name&&peripheralInfo.name.length && [peripheralInfo.name hasPrefix:@"M9"]) {
             [deviceArray addObject:peripheralInfo];
             [self.myTableview reloadData];
         }
