@@ -31,3 +31,5 @@
 "btn_no"="No";
 "btn_turnon"="Turn On";
 "ip_address" ="Server information to be conneced by the device";
+"service_nil" = "Server address can not be empty";
+"port_nil" = "Port can not be empty";

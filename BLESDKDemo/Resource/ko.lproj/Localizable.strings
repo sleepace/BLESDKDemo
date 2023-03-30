@@ -31,3 +31,5 @@
 "btn_no"="No";
 "btn_turnon"="Turn On";
 "ip_address" ="설비 접속 대상의  서버 정보";
+"service_nil" = "서버 주소는 비워둘 수 없습니다.";
+"port_nil" = "포트는 비워둘 수 없습니다.";

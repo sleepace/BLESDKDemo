@@ -204,13 +204,13 @@
     }
     
     if (self.textfield3.text.length == 0&&self.deviceType !=SLPDeviceType_NOX2_WiFi){
-        UIAlertView *alertview = [[UIAlertView alloc] initWithTitle:nil message:@"Server address can not be empty" delegate:nil cancelButtonTitle:@"Confirm" otherButtonTitles:nil, nil];;
+        UIAlertView *alertview = [[UIAlertView alloc] initWithTitle:nil message:NSLocalizedString(@"service_nil", nil) delegate:nil cancelButtonTitle:NSLocalizedString(@"btn_ok", nil) otherButtonTitles:nil, nil];;
         [alertview show];
         return;
     }
     
     if (self.textfield4.text.length == 0&&self.deviceType !=SLPDeviceType_NOX2_WiFi){
-        UIAlertView *alertview = [[UIAlertView alloc] initWithTitle:nil message:@"Port can not be empty" delegate:nil cancelButtonTitle:@"Confirm" otherButtonTitles:nil, nil];;
+        UIAlertView *alertview = [[UIAlertView alloc] initWithTitle:nil message:NSLocalizedString(@"port_nil", nil) delegate:nil cancelButtonTitle:NSLocalizedString(@"btn_ok", nil) otherButtonTitles:nil, nil];;
         [alertview show];
         return;
     }

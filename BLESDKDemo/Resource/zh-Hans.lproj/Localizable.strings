@@ -31,3 +31,5 @@
 "btn_no"="否";
 "btn_turnon"="开启";
 "ip_address" ="设备要连接的服务器信息";
+"service_nil" = "服务器地址不能为空";
+"port_nil" = "端口不能为空";
