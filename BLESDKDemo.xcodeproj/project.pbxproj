@@ -492,7 +492,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 10002;
+				CURRENT_PROJECT_VERSION = 10004;
 				DEVELOPMENT_TEAM = NV3296URNT;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -502,7 +502,7 @@
 				INFOPLIST_FILE = BLESDKDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 2.0.5;
+				MARKETING_VERSION = 2.0.6;
 				OTHER_LDFLAGS = (
 					"-force_load",
 					"$(SRCROOT)/BluetoothManager.framework/BluetoothManager",
@@ -520,7 +520,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 10002;
+				CURRENT_PROJECT_VERSION = 10004;
 				DEVELOPMENT_TEAM = NV3296URNT;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -530,7 +530,7 @@
 				INFOPLIST_FILE = BLESDKDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 2.0.5;
+				MARKETING_VERSION = 2.0.6;
 				OTHER_LDFLAGS = (
 					"-force_load",
 					"$(SRCROOT)/BluetoothManager.framework/BluetoothManager",

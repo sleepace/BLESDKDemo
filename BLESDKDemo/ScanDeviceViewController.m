@@ -60,7 +60,7 @@
 }
 
 - (IBAction)back:(id)sender {
-    [SLPBLESharedManager stopAllPeripheralScan];
+//    [SLPBLESharedManager stopAllPeripheralScan];
     [self.navigationController popViewControllerAnimated:YES];
 }
 
@@ -69,6 +69,13 @@
 {
 //    self.navigationController.navigationBar.hidden=NO;
     
+}
+
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    [SLPBLESharedManager stopAllPeripheralScan];
 }
 
 
