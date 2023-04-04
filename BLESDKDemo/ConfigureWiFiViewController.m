@@ -48,7 +48,7 @@
 
 - (void)setUI
 {
-    self.titleLabel.text = @"BLE to Wi-Fi";
+    self.titleLabel.text =NSLocalizedString(@"demo_name_ble_wifi", nil);
     self.label1.text = NSLocalizedString(@"step1", nil);
     self.label2.text = NSLocalizedString(@"select_device", nil);
     self.label3.text = NSLocalizedString(@"select_device", nil);
