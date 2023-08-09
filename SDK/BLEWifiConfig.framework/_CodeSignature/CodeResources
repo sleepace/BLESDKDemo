@@ -4,13 +4,17 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>.DS_Store</key>
+		<data>
+		MoRhPjxDq8eXe0o6MUd9YIkzva4=
+		</data>
 		<key>Headers/BLEWifiConfig.h</key>
 		<data>
 		snKLdp+RDL7P5GQErsrIIwWGwAA=
 		</data>
 		<key>Headers/SLPBleWifiConfig.h</key>
 		<data>
-		pFNQkzWqSLqoh55ZIlRvs8mvaHk=
+		hu5ReWawuEIBrTgUguEy8CRldjw=
 		</data>
 		<key>Headers/SLPGetDeviceInfo.h</key>
 		<data>
@@ -26,7 +30,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Dc9GNGFR6UWzTa9J73PgLDixJC8=
+		g051LXBr46bhjnw4iUhfIjJ9sQc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -50,11 +54,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			pFNQkzWqSLqoh55ZIlRvs8mvaHk=
+			hu5ReWawuEIBrTgUguEy8CRldjw=
 			</data>
 			<key>hash2</key>
 			<data>
-			blZMj3q8m8cghVeKLhSOJtng4sd194I4ebZBpV/AKYM=
+			nOMyxKxDSdN8AgvO2Mzh4c7oYSVtEpEkXWuDNIWHX1E=
 			</data>
 		</dict>
 		<key>Headers/SLPGetDeviceInfo.h</key>

@@ -76,4 +76,21 @@
 - (void)getIpInfo:(CBPeripheral *)peripheral
        deviceType:(SLPDeviceTypes)deviceType
        completion:(void(^)(BOOL succeed, id data))completion;
+
+
+/**
+给设备配置APN
+@param peripheral 外设
+@param deviceType 设备类型
+@param apn APN
+@param username 用户名
+@param password 密码
+@param completion 回调WiFi连接状态
+*/
+- (void)configPeripheral:(CBPeripheral *)peripheral deviceType:(SLPDeviceTypes)deviceType
+                apn:(NSString *)apn
+                    user:(NSString *)username
+                password:(NSString *)password
+              completion:(void (^)(SLPDataTransferStatus status, id data))completion;
+
 @end
