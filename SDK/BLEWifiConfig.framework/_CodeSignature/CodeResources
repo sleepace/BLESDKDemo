@@ -4,13 +4,9 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>.DS_Store</key>
-		<data>
-		MoRhPjxDq8eXe0o6MUd9YIkzva4=
-		</data>
 		<key>Headers/BLEWifiConfig.h</key>
 		<data>
-		snKLdp+RDL7P5GQErsrIIwWGwAA=
+		CziRXKnMr1x+0tlvHSe/z3daDfk=
 		</data>
 		<key>Headers/SLPBleWifiConfig.h</key>
 		<data>
@@ -43,11 +39,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			snKLdp+RDL7P5GQErsrIIwWGwAA=
+			CziRXKnMr1x+0tlvHSe/z3daDfk=
 			</data>
 			<key>hash2</key>
 			<data>
-			E9KvrxjPdSK8v6R2JCl8J35fieJj84omG+xmLQDIi1Q=
+			j3tbR/YN2da9RWEERgrjWgiRNAwZZaIDr7UT0zJtvVg=
 			</data>
 		</dict>
 		<key>Headers/SLPBleWifiConfig.h</key>
