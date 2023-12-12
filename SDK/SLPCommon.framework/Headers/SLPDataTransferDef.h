@@ -85,6 +85,7 @@ typedef NS_ENUM(NSInteger,SLPDeviceTypes) {
     SLPDeviceType_BG001A = 0x32, // BG001A
     SLPDeviceType_M8701W = 0x34, // M8701W
     SLPDeviceType_EW202W = 0x35, // EW202W
+    SLPDeviceType_SDC100 = 0x003A, //SDC100
     SLPDeviceType_BM8701 = 0x8099, // BM8701
     SLPDeviceType_FH601W = 0x8013, // FH601W
     SLPDeviceType_TWP3 = 0x5009,//TWP-3
