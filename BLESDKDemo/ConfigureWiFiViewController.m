@@ -166,6 +166,10 @@
     {
         self.deviceType = SLPDeviceType_M901L;
     }
+    else if ([devicename hasPrefix:@"SDC"])
+    {
+        self.deviceType = SLPDeviceType_SDC100;
+    }
 //    else if ([devicename hasPrefix:@"BG02"])
 //    {
 //        self.deviceType = SLPDeviceType_BG002;
