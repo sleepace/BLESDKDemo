@@ -38,7 +38,7 @@
 		</data>
 		<key>Headers/SLPDataTransferDef.h</key>
 		<data>
-		RKMjz6hAZJJuzuQKOJrxbnSx5yY=
+		oh/4QX3yPF5d/a3g6Ow4MtCt5Yo=
 		</data>
 		<key>Headers/SLPDeviceInfo.h</key>
 		<data>
@@ -74,7 +74,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		xaH1zZtX7LC7mOoSJ3BS+Yd8ABg=
+		gzo6GLKKYKUxL8nghBNKlY7aMoU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -183,11 +183,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			RKMjz6hAZJJuzuQKOJrxbnSx5yY=
+			oh/4QX3yPF5d/a3g6Ow4MtCt5Yo=
 			</data>
 			<key>hash2</key>
 			<data>
-			gJyM16zqYvLfi8HGh5ZSm+XcGhgbHSVvb3W1cFOHFMY=
+			I/RG1UW+KFAFUYEuA+AnqilIF/I2/ysbIEVOA6OSYJc=
 			</data>
 		</dict>
 		<key>Headers/SLPDeviceInfo.h</key>

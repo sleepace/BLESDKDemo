@@ -73,8 +73,8 @@
     
     self.deviceType = SLPDeviceType_WIFIReston;
     //default
-//    self.textfield3.text = @"120.24.68.136";
-//    self.textfield4.text = @"29014";
+    self.textfield3.text = @"120.24.68.136";
+    self.textfield4.text = @"29014";
     
     self.textfield1.delegate = self;
     self.textfield2.delegate = self;
@@ -89,12 +89,12 @@
         self.textfield2.text = [[NSUserDefaults standardUserDefaults]objectForKey:@"Passoword"];
     }
     
-    if ([[NSUserDefaults standardUserDefaults]objectForKey:@"IPAddress"]) {
-        self.textfield3.text = [[NSUserDefaults standardUserDefaults]objectForKey:@"IPAddress"];
-    }
-    if ([[NSUserDefaults standardUserDefaults]objectForKey:@"port"]) {
-        self.textfield4.text = [[NSUserDefaults standardUserDefaults]objectForKey:@"port"];
-    }
+//    if ([[NSUserDefaults standardUserDefaults]objectForKey:@"IPAddress"]) {
+//        self.textfield3.text = [[NSUserDefaults standardUserDefaults]objectForKey:@"IPAddress"];
+//    }
+//    if ([[NSUserDefaults standardUserDefaults]objectForKey:@"port"]) {
+//        self.textfield4.text = [[NSUserDefaults standardUserDefaults]objectForKey:@"port"];
+//    }
 }
 
 - (void)didSelectDeviceType:(NSString *)devicename{
@@ -125,6 +125,10 @@
     else if ([devicename hasPrefix:@"BM871W"])
     {
         self.deviceType = SLPDeviceType_M8701W;
+    }
+    else if ([devicename hasPrefix:@"M8701W_BSC"])
+    {
+        self.deviceType = SLPDeviceType_M8701W_BSC;
     }
     else if ([devicename hasPrefix:@"FH61W"])
     {
