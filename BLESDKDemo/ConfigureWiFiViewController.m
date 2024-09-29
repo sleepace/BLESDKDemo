@@ -106,10 +106,10 @@
     {
         self.deviceType = SLPDeviceType_EW201W;
     }
-    else if ([devicename hasPrefix:@"M8"])
-    {
-        self.deviceType = SLPDeviceType_M800;
-    }
+//    else if ([devicename hasPrefix:@"M8"])
+//    {
+//        self.deviceType = SLPDeviceType_M800;
+//    }
     else if ([devicename hasPrefix:@"SN91E"])
     {
         self.deviceType = SLPDeviceType_SN913E;
@@ -126,7 +126,7 @@
     {
         self.deviceType = SLPDeviceType_M8701W;
     }
-    else if ([devicename hasPrefix:@"M8701W_BSC"])
+    else if ([devicename hasPrefix:@"M871W"])
     {
         self.deviceType = SLPDeviceType_M8701W_BSC;
     }
