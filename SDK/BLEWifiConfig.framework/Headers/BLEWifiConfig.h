@@ -13,5 +13,5 @@
 #import "SLPGetWiFiInfo.h"
 
 
-#define kBLEWifiConfigVersion @"3.0.3"
+#define kBLEWifiConfigVersion @"3.0.4"
 

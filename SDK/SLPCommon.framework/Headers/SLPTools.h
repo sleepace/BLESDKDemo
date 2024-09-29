@@ -17,6 +17,9 @@ static const NSInteger kMacAddressLength = 6;
 static const NSInteger kServerAddressLength = 32;
 static const NSInteger kHttpAddressLength = 128;
 
+static const NSInteger kServerAddressLength_M8701W_BSC = 129;//特例
+
+
 @interface SLPTools : NSObject
 + (NSData *)streamDataByInt64:(int64_t)value;
 + (NSData *)streamDataByInt32:(int32_t)value;
