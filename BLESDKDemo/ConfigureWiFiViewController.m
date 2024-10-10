@@ -73,8 +73,8 @@
     
     self.deviceType = SLPDeviceType_WIFIReston;
     //default
-    self.textfield3.text = @"120.24.68.136";
-    self.textfield4.text = @"29014";
+    self.textfield3.text = @"sensor.smt.dev.benesse-style-care.co.jp";
+    self.textfield4.text = @"28070";
     
     self.textfield1.delegate = self;
     self.textfield2.delegate = self;

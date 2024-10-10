@@ -91,16 +91,18 @@
     }
     [SLPBLESharedManager scanBluetoothWithTimeoutInterval:10.0 completion:^(SLPBLEScanReturnCodes code, NSInteger handleID, SLPPeripheralInfo *peripheralInfo) {
         NSLog(@"scan device>>:%@",peripheralInfo.name);
-        int i=0;
-        while (i<deviceArray.count) {
-            SLPPeripheralInfo *devInfo=(SLPPeripheralInfo*)[deviceArray objectAtIndex:i++];
-            if (devInfo.name&&[devInfo.name isEqualToString:peripheralInfo.name]) {
-                return ;
+        if([peripheralInfo.name hasPrefix:@"M871W"]){
+            int i=0;
+            while (i<deviceArray.count) {
+                SLPPeripheralInfo *devInfo=(SLPPeripheralInfo*)[deviceArray objectAtIndex:i++];
+                if (devInfo.name&&[devInfo.name isEqualToString:peripheralInfo.name]) {
+                    return ;
+                }
             }
-        }
-        if (peripheralInfo.name&&peripheralInfo.name.length) {
-            [deviceArray addObject:peripheralInfo];
-            [self.myTableview reloadData];
+            if (peripheralInfo.name&&peripheralInfo.name.length) {
+                [deviceArray addObject:peripheralInfo];
+                [self.myTableview reloadData];
+            }
         }
     }];
 }
