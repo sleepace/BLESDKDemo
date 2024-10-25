@@ -126,7 +126,7 @@
     {
         self.deviceType = SLPDeviceType_M8701W;
     }
-    else if ([devicename hasPrefix:@"M871W"])
+    else if ([devicename hasPrefix:@"M87"])
     {
         self.deviceType = SLPDeviceType_M8701W_BSC;
     }
