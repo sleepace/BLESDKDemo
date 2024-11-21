@@ -91,7 +91,7 @@
     }
     [SLPBLESharedManager scanBluetoothWithTimeoutInterval:10.0 completion:^(SLPBLEScanReturnCodes code, NSInteger handleID, SLPPeripheralInfo *peripheralInfo) {
         NSLog(@"scan device>>:%@",peripheralInfo.name);
-        if([peripheralInfo.name hasPrefix:@"M871W"]){
+        if([peripheralInfo.name hasPrefix:@"M87"]){
             int i=0;
             while (i<deviceArray.count) {
                 SLPPeripheralInfo *devInfo=(SLPPeripheralInfo*)[deviceArray objectAtIndex:i++];
